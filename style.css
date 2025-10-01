@@ -1,0 +1,361 @@
+@charset "UTF-8";
+
+/* ベース */
+html, body {
+  background-color: #000000 !important;
+}
+
+/* ヘッダー */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  backdrop-filter: blur(10px);
+}
+
+.collapse.navbar-collapse {
+  padding-right: 80px;
+}
+
+.header_logo {
+  padding-left: 20px;
+}
+
+.nav-item {
+  padding-left: 50px;
+}
+
+.navbar-brand img, .footer_logo {
+  transition: all 0.3s ease;
+}
+
+/* ヒーロー */
+.hero_header {
+  background-image: url(../images/unsplash_-oVaYMgBMbs.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero_header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: tomato;
+  z-index: 1;
+}
+
+.hero_header h1 {
+  color: white;
+  font-family: serif;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  padding-left: 300px;
+  padding-top: 25%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  position: relative;
+}
+
+.no_life {
+  margin-left: 100px;
+}
+
+/* サービス */
+.service_section {
+  background-color: #000000;
+  padding: 100px 0 50px 0;
+}
+
+.service_section h1 {
+  color: #fff;
+  font-family: serif;
+  font-size: 70px;
+  padding-left: 100px;
+  letter-spacing: 0.2em;
+  margin-bottom: 50px;
+}
+
+.service_info {
+  position: relative;
+  min-height: 600px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+}
+
+.service_info .text_content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+}
+
+.text_content p {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+}
+
+.text_content ul {
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.text_content li {
+  color: #AF6262;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.service_image {
+  position: absolute;
+  /* top: 50%; */
+  right: 100px;
+  width: 700px;
+  height: auto;
+  border-radius: 10px;
+  z-index: 1;
+  opacity: 1;
+  transform: translate(50%, 0);
+  transition: 2s;
+}
+
+.service_image.is-show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* ニュース */
+.news_section {
+  background-color: #000000;
+  padding: 40px 0;
+}
+
+.news_section h1 {
+  color: #fff;
+  font-family: serif;
+  letter-spacing: 0.2rem;
+  padding-left: 200px;
+  margin-bottom: 20px;
+}
+
+.news_video {
+  max-width: 80%;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+}
+
+.news_image {
+  max-width: 80%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.news_info {
+  background-color: rgba(121, 119, 119, 0.5);
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.news_info dl {
+  padding: 20px 30px;
+}
+
+.news_info dt {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.news_info dd {
+  color: #AF6262;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .news_image {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .news_image {
+    max-width: 95%;
+  }
+}
+
+/* リクルート */
+.recruit_section {
+  background-color: #000000;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.recruit_section h1 {
+  color: white;
+  font-size: 70px;
+  font-family: serif;
+  letter-spacing: 0.2em;
+  margin-bottom: 20px;
+}
+
+.recruit_section p {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.info_box, .contact_box {
+  background-color: #808080;
+  width: 400px;
+  height: 200px;
+  display: inline-block;
+  margin: 0 25px;
+  vertical-align: top;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.info_box:hover, .contact_box:hover {
+  background-color: #606060;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.info_box h2, .contact_box h2 {
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  line-height: 200px;
+  transition: color 0.3s ease;
+}
+
+.contact_box h2 {
+  letter-spacing: 0.1em;
+}
+
+.info_box:hover h2, .contact_box:hover h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* フッター */
+.footer_content {
+  background-color: #808080;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer_logo {
+  height: 40px;
+  margin: 30px;
+}
+
+.footer_item1, .footer_item2, .footer_item3 {
+  text-align: center;
+}
+
+.footer_item1 ul, .footer_item2 ul, .footer_item3 ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer_item1 li, .footer_item2 li, .footer_item3 li {
+  list-style: none;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer_title1, .footer_title2, .footer_title3 {
+  color: #000;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  font-family: serif;
+}
+
+.footer_item1 a, .footer_item2 a, .footer_item3 a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer_item1 a:hover, .footer_item2 a:hover, .footer_item3 a:hover {
+  color: #AF6262;
+}
+
+/* 動画ローディング画面 */
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#splash_video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fadeOut {
+  animation: fadeOut 1s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
