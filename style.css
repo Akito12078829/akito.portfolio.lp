@@ -1,0 +1,466 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .navbar-nav {
+  margin-left: auto;
+  padding-right: 100px;
+}
+
+header .navbar-brand {
+  padding-left: 100px;
+}
+
+/* 画面読み込み時 */
+ .loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 555;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Snow Animation Background */
+.background_01 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+  background: transparent;
+}
+
+/* hero */
+.hero_content {
+  position: relative;
+}
+
+.hero_content h1 {
+  font-family: 'Irish Grover', cursive;
+  position: absolute;
+  font-size: 4rem;
+  color: #fff;
+  padding-left: 900px;
+  padding-top: 400px;
+}
+
+.hero_image {
+  width: 100%;
+  height: auto;
+}
+
+/* women */
+
+.women_collection {
+  display: flex;
+  background-color: #242424;
+}
+
+.women_image {
+  width: 50%;
+  height: auto;
+}
+
+.women_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.women_content h2 {
+  font-family: 'Irish Grover', cursive;
+  font-size: 3rem;
+  padding-top: 350px;
+  padding-left: 180px;
+  color: #fff;
+}
+
+.women_content .btn {
+  margin-left: 180px;
+  font-size: 45px;
+  font-family: 'Irish Grover', cursive;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.women_content .btn:hover {
+  background-color: #fff;
+  color: #242424;
+  transition: 0.3s;
+}
+  
+/* men */
+
+.men_collection {
+  display: flex;
+  background-color: #242424;
+}
+
+.men_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.men_image {
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+}
+
+.men_content h2 {
+  font-family: 'Irish Grover', cursive;
+  font-size: 3rem;
+  padding-top: 350px;
+  padding-left: 220px;
+  color: #fff;
+}
+
+.men_content .btn {
+  margin-left: 220px;
+  font-size: 45px;
+  font-family: 'Irish Grover', cursive;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.men_content .btn:hover {
+  background-color: #fff;
+  color: #242424;
+  transition: 0.3s;
+}
+
+/* gallery */
+
+.gallery_content1 {
+  display: flex;
+  background-color: #242424;
+}
+
+.gallery_image1 {
+  width: 50%;
+  height: auto;
+}
+
+.gallery_image2 {
+  width: 50%;
+  height: auto;
+}
+
+.gallery_content2 {
+  display: flex;
+  background-color: #242424;
+}
+
+.gallery_image3 {
+  width: 50%;
+  height: auto;
+}
+
+.gallery_image4 {
+  width: 50%;
+  height: auto;
+}
+
+.contact_section {
+  background-color: #242424;
+  width: 100%;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+.button_area {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact_section .btn {
+  font-size: 50px;
+  font-family: 'Irish Grover', cursive;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.contact_section .btn:hover {
+  background-color: #fff;
+  color: #242424;
+  transition: 0.3s;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* タブレット（1024px以下） */
+@media (max-width: 1024px) {
+  /* Hero Section */
+  .hero_content h1 {
+    font-size: 3rem;
+    padding-left: 400px;
+    padding-top: 300px;
+  }
+
+  /* Women Collection - PCと同じレイアウト */
+  .women_collection {
+    display: flex;
+    background-color: #242424;
+  }
+
+  .women_image {
+    width: 50%;
+    height: auto;
+  }
+
+  .women_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .women_content h2 {
+    font-family: 'Irish Grover', cursive;
+    font-size: 2.5rem;
+    padding-top: 200px;
+    padding-left: 100px;
+    color: #fff;
+  }
+
+  .women_content .btn {
+    margin-left: 100px;
+    font-size: 35px;
+    font-family: 'Irish Grover', cursive;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+
+  .women_content .btn:hover {
+    background-color: #fff;
+    color: #242424;
+    transition: 0.3s;
+  }
+
+  /* Men Collection - PCと同じレイアウト */
+  .men_collection {
+    display: flex;
+    background-color: #242424;
+  }
+
+  .men_image {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+  }
+
+  .men_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .men_content h2 {
+    font-family: 'Irish Grover', cursive;
+    font-size: 2.5rem;
+    padding-top: 200px;
+    padding-left: 120px;
+    color: #fff;
+  }
+
+  .men_content .btn {
+    margin-left: 120px;
+    font-size: 35px;
+    font-family: 'Irish Grover', cursive;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+
+  .men_content .btn:hover {
+    background-color: #fff;
+    color: #242424;
+    transition: 0.3s;
+  }
+
+  /* Button Area */
+  .button_area {
+    height: 50vh;
+  }
+  
+  .contact_section .btn {
+    font-size: 40px;
+  }
+}
+
+/* タブレット・小型デバイス（768px以下） */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .hero_content h1 {
+    font-size: 2.5rem;
+    padding-left: 200px;
+    padding-top: 200px;
+    text-align: center;
+  }
+
+  /* Women Collection - 縦並び */
+  .women_collection {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .women_image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .women_content {
+    width: 100%;
+  }
+
+  .women_content h2 {
+    font-size: 2rem;
+    padding: 20px 0;
+  }
+
+  .women_content .btn {
+    font-size: 25px;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+  }
+
+  /* Men Collection - 画像とボタンを逆順 */
+  .men_collection {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .men_image {
+    width: 100%;
+    margin-bottom: 20px;
+    order: 2; /* 画像を後に */
+  }
+
+  .men_content {
+    width: 100%;
+    order: 1; /* コンテンツ（タイトル・ボタン）を先に */
+  }
+
+  .men_content h2 {
+    font-size: 2rem;
+    padding: 20px 0;
+  }
+
+  .men_content .btn {
+    font-size: 25px;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+  }
+
+  /* Gallery Sections */
+  .clothes_gallery_1 .gallery_image,
+  .clothes_gallery_2 .gallery_image {
+    flex-direction: column;
+  }
+
+  .clothes_gallery_1 .gallery_image img,
+  .clothes_gallery_2 .gallery_image img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Button Area */
+  .button_area {
+    height: 50vh;
+  }
+  
+  .contact_section .btn {
+    font-size: 30px;
+  }
+}
+
+/* スマートフォン（480px以下） */
+@media (max-width: 480px) {
+  /* Navigation */
+  header .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  /* Hero Section */
+  .hero_content h1 {
+    font-size: 1.8rem;
+    padding-left: 20px;
+    padding-top: 100px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  /* Women Collection */
+  .women_collection {
+    padding: 15px;
+  }
+
+  .women_content h2 {
+    font-size: 1.5rem;
+    padding: 15px 0;
+  }
+
+  .women_content .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  /* Men Collection - 画像とボタンを逆順 */
+  .men_collection {
+    padding: 15px;
+    flex-direction: column-reverse;
+  }
+
+  .men_image {
+    order: 2; /* 画像を後に */
+  }
+
+  .men_content {
+    order: 1; /* コンテンツ（タイトル・ボタン）を先に */
+  }
+
+  .men_content h2 {
+    font-size: 1.5rem;
+    padding: 15px 0;
+  }
+
+  .men_content .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  /* Gallery Images */
+  .clothes_gallery_1,
+  .clothes_gallery_2 {
+    padding: 10px;
+  }
+
+  /* Button Area */
+  .button_area {
+    height: 50vh;
+  }
+
+  .contact_section .btn {
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+}
